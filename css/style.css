@@ -1932,7 +1932,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 100px;
-  justify-content: space-between;
 }
 .partners .partners__first {
   margin-top: 10px;
@@ -1959,11 +1958,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   margin-top: 50px;
 }
 .partners .partners__bottom__card {
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: center;
   padding: 20px 0px;
@@ -1993,15 +1992,33 @@ a {
   .partners .partners__bottom {
     width: 90%;
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: center;
+    justify-content: center;
     margin-top: 50px;
-    margin-left: 130px;
+  }
+}
+@media (min-width: 992px) {
+  .partners {
+    width: 100%;
+  }
+  .partners .partners__box {
+    width: 100%;
+  }
+  .partners .partners__first {
+    display: flex;
+    flex-direction: row;
+  }
+  .partners .partners__bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
   }
 }
 .blog {
   width: 100%;
-  margin-bottom: 500px;
+  margin-top: 50px;
 }
 .blog .blog__box {
   width: 100%;
@@ -2040,6 +2057,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.337);
 }
 .blog .blog__card span {
   display: flex;
@@ -2049,4 +2068,154 @@ a {
 }
 .blog .blog__card span img {
   width: 20px;
+}
+.blog .blog__card-4 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .blog {
+    width: 100%;
+  }
+  .blog .blog__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .blog .blog__first {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+  .blog .blog__first span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .blog .blog__title {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+  }
+  .blog .blog__desc {
+    text-align: center;
+  }
+  .blog .blog__cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .blog .blog__card {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+  }
+  .blog .blog__card span {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: end;
+  }
+  .blog .blog__card span img {
+    width: 20px;
+  }
+  .blog .blog__card-4 {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+  }
+  .blog .blog__card-4 span {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: end;
+  }
+  .blog .blog__card-4 span img {
+    width: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .blog {
+    width: 100%;
+  }
+  .blog .blog__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .blog .blog__first {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 50px;
+  }
+  .blog .blog__first span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .blog .blog__title {
+    width: 30%;
+    text-align: start;
+    font-size: 48px;
+  }
+  .blog .blog__desc {
+    margin-top: 20px;
+    width: 50%;
+    text-align: start;
+  }
+  .blog .blog__cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .blog .blog__card {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+  }
+  .blog .blog__card span {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: end;
+  }
+  .blog .blog__card span img {
+    width: 20px;
+  }
+  .blog .blog__card-4 {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+  }
+  .blog .blog__card-4 span {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: end;
+  }
+  .blog .blog__card-4 span img {
+    width: 20px;
+  }
 }
