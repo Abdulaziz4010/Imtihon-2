@@ -93,3 +93,23 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .partners {
+    width: 100%;
+    .partners__box {
+      width: 100%;
+    }
+    .partners__first {
+      display: flex;
+      flex-direction: row;
+    }
+    .partners__bottom {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  }
+}

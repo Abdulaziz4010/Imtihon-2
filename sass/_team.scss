@@ -1,0 +1,211 @@
+.team {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  border-top: 1px solid rgba(128, 128, 128, 0.153);
+  .team__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    span {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+  .team__text {
+    display: flex;
+    gap: 10px;
+  }
+  .team__title {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  .team__btn-2 {
+    display: none;
+  }
+  .team__cards {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .team__cards__card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    img {
+      width: 100%;
+    }
+    span {
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid #56585e;
+      padding: 10px;
+      font-size: 18px;
+      color: #56585e;
+    }
+  }
+  .team__btn-1 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    color: #184afb;
+    font-size: 18px;
+    &:hover {
+      background-color: #184afb;
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    .team__info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      span {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+    .team__text {
+      display: flex;
+      gap: 10px;
+    }
+    .team__title {
+      width: 100%;
+      text-align: center;
+      font-size: 28px;
+    }
+    .team__btn-2 {
+      display: none;
+    }
+    .team__cards {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .team__cards__card {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 50px;
+      img {
+        width: 100%;
+      }
+      span {
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid #56585e;
+        padding: 10px;
+        font-size: 18px;
+        color: #56585e;
+      }
+    }
+    .team__btn-1 {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      color: #184afb;
+      font-size: 18px;
+      &:hover {
+        background-color: #184afb;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    .team__info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      span {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+    .team__text {
+      display: flex;
+      gap: 10px;
+    }
+    .team__title {
+      width: 100%;
+      text-align: center;
+      font-size: 28px;
+    }
+    .team__btn-2 {
+      display: none;
+    }
+    .team__cards {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+    }
+    .team__cards__card {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 50px;
+      img {
+        width: 100%;
+      }
+      span {
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid #56585e;
+        padding: 10px;
+        font-size: 18px;
+        color: #56585e;
+      }
+    }
+    .team__btn-1 {
+      display: none;
+    }
+    .team__btn-2 {
+      display: flex;
+      width: 50%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      color: #184afb;
+      font-size: 18px;
+      &:hover {
+        background-color: #184afb;
+        color: white;
+      }
+    }
+  }
+}
