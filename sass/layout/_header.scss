@@ -2,8 +2,12 @@
   width: 100%;
   position: sticky;
   top: 0;
-  box-shadow: 0px 0px 10px darkblue;
   border-bottom: 1px solid grey;
+  z-index: 999;
+  background-color: #fff;
+  &__shrink {
+    box-shadow: 0px 0px 10px #184afb;
+  }
   .header__nav {
     width: 100%;
     display: flex;
@@ -15,11 +19,29 @@
   .header__img {
     width: 100px;
   }
-  .header__item {
+  .header__items {
     display: flex;
   }
-  .header__lists {
+  .header__list {
     display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: #0035f487;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 50px;
+    justify-content: center;
+    box-shadow: 0px 0px 10px skyblue;
+    transition: 0.5s;
+  }
+  .header__list-show {
+    left: 0;
+    top: 0;
   }
   .header__right {
     // width: 100%;
@@ -35,8 +57,9 @@
       border-left: 1px solid grey;
     }
   }
-  .header__hamburger {
-    width: 20px;
+  .header__menu {
+    width: 30px;
+    height: 30px;
     margin-top: 5px;
     cursor: pointer;
   }
@@ -47,6 +70,16 @@
     padding: 6px 16px;
     outline: none;
     color: #184afb;
+    font-weight: 600;
+    &:hover {
+      background-color: #184afb;
+      color: white;
+      border-color: #184afb;
+    }
+  }
+  .header__btn-hamburger {
+    border: none;
+    background: transparent;
   }
 }
 
@@ -56,8 +89,17 @@
     .header__img {
       width: 150px;
     }
-    .header__lists {
-      display: none;
+    .header__list {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      display: flex;
+      position: static;
+      flex-direction: row;
+      box-shadow: none;
+      height: auto;
+      background-color: transparent;
+      width: auto;
     }
     .header__select {
       select {
@@ -66,20 +108,18 @@
         border-left: 1px solid grey;
       }
     }
-    .header__hamburger {
-      width: 26px;
-    }
     .header__btn {
       border: 1px solid grey;
       background: transparent;
       border-radius: 10px;
-      padding: 6px 16px;
+      padding: 8px 12px;
       outline: none;
       color: #184afb;
     }
     .header__right {
+      width: 50%;
       display: flex;
-      gap: 30px;
+      gap: 10px;
     }
   }
 }
@@ -100,14 +140,14 @@
         border-left: 1px solid grey;
       }
     }
-    .header__item {
+    .header__btn-hamburger {
+      display: none;
+      border: none;
+      background: transparent;
+    }
+    .header__items {
       display: flex;
       gap: 110px;
-    }
-    .header__lists {
-      display: flex;
-      gap: 15px;
-      align-items: center;
     }
     .header__link {
       color: #828388;
@@ -121,7 +161,7 @@
       border: 1px solid grey;
       background: transparent;
       border-radius: 10px;
-      padding: 6px 16px;
+      padding: 10px 30px;
       outline: none;
       color: #184afb;
     }
@@ -148,14 +188,9 @@
         border-left: 1px solid grey;
       }
     }
-    .header__item {
+    .header__items {
       display: flex;
-      gap: 200px;
-    }
-    .header__lists {
-      display: flex;
-      gap: 15px;
-      align-items: center;
+      gap: 80px;
     }
     .header__link {
       color: #828388;
@@ -171,10 +206,6 @@
       outline: none;
       color: #184afb;
     }
-    .header__right {
-      display: flex;
-      gap: 30px;
-    }
   }
 }
 
@@ -184,7 +215,7 @@
     .header__img {
       width: 170px;
     }
-    .header__lists {
+    .header__list {
       display: none;
     }
     .header__select {
@@ -194,11 +225,11 @@
         border-left: 1px solid grey;
       }
     }
-    .header__item {
+    .header__items {
       display: flex;
       gap: 250px;
     }
-    .header__lists {
+    .header__list {
       display: flex;
       gap: 20px;
       align-items: center;
@@ -240,28 +271,29 @@
         border-left: 1px solid grey;
       }
     }
-    .header__item {
+    .header__items {
       display: flex;
-      gap: 500px;
+      gap: 400px;
     }
-    .header__lists {
+    .header__list {
       display: flex;
-      gap: 30px;
+      gap: 40px;
       align-items: center;
     }
     .header__link {
       color: #828388;
       font-family: sans-serif;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 20px;
     }
     .header__btn {
       border: 1px solid grey;
       background: transparent;
       border-radius: 10px;
-      padding: 12px 30px;
+      padding: 14px 40px;
       outline: none;
       color: #184afb;
+      font-size: 18px;
     }
     .header__right {
       display: flex;

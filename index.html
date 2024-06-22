@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <title>Exam</title>
   </head>
   <body>
@@ -16,14 +20,26 @@
             src="./images/header logo.svg"
             alt="header-logo"
         /></a>
-        <div class="header__item">
-          <ul class="header__lists">
-            <li><a class="header__link" href="#">About</a></li>
-            <li><a class="header__link" href="#">Maqsadimiz</a></li>
-            <li><a class="header__link" href="#">Ta'lim </a></li>
-            <li><a class="header__link" href="#">Imkoniyat</a></li>
-            <li><a class="header__link" href="#">A’zolik</a></li>
-            <li><a class="header__link" href="#">Profile</a></li>
+        <div class="header__items">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">About</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Maqsadimiz</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Ta'lim </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Imkoniyat</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">A’zolik</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Profile</a>
+            </li>
           </ul>
           <div class="header__right">
             <div class="header__select">
@@ -34,12 +50,405 @@
               </select>
             </div>
             <button class="header__btn">KIRISH +</button>
-            <span class="header__hamburger"
-              ><img src="./images/hamburger.svg" alt="hamburger"
-            /></span>
+            <button class="header__btn-hamburger">
+              <img
+                class="header__menu"
+                src="./images/hamburger.svg"
+                alt="hamburger"
+              />
+            </button>
           </div>
         </div>
       </nav>
     </header>
+    <main>
+      <!-- HERO -->
+      <section class="hero container">
+        <div class="hero__img">
+          <img src="./images/hero img.svg" alt="images" />
+        </div>
+        <div class="hero__info">
+          <h1 class="hero__title">Biz bilan xalqaro darajagacha</h1>
+          <p class="hero__desc">
+            O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish va
+            ularning it-ko‘nikmalarini ko'nikmalarini rivojlantirish
+          </p>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section class="about container">
+        <div class="about__box">
+          <aside class="about__first">
+            <img src="./images/darkblue icon img.svg" alt="darkblue" />
+            <p class="about__first__title">About</p>
+          </aside>
+          <div class="about__left">
+            <h1 class="about__left__title">IT ta’lim uyshmasi bilan bo’ling</h1>
+            <p class="about__left__desc">
+              O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish va
+              ularning it-ko‘nikmalarini ko'nikmalarini rivojlantirish
+            </p>
+            <button type="submit" class="about__left__btn">Batafsil</button>
+          </div>
+          <div class="about__right">
+            <img src="./images/about img.svg" alt="images" />
+          </div>
+        </div>
+      </section>
+      <!-- OUR GOAL -->
+      <section class="ourgoal container">
+        <div class="ourgoal__box">
+          <aside class="ourgoal__first">
+            <img src="./images/darkblue icon img.svg" alt="darkblue" />
+            <p class="ourgoal__first__title">Maqsadimiz</p>
+          </aside>
+          <div class="ourgoal__left">
+            <h1 class="ourgoal__left__title">
+              MAQSADIMIZ BIZNI DUNYO TAN OLISHI
+            </h1>
+            <aside class="ourgoal__img">
+              <img src="./images/our goal img.svg" alt="images" />
+            </aside>
+          </div>
+          <div class="ourgoal__right">
+            <span
+              ><h3>
+                IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                muassasalarini qo'llab quvvatlash
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </h3>
+            </span>
+            <span
+              ><h3>
+                IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                muassasalarini qo'llab quvvatlash
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </h3>
+            </span>
+            <span
+              ><h3>
+                IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                muassasalarini qo'llab quvvatlash
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </h3>
+            </span>
+            <span
+              ><h3>
+                IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                muassasalarini qo'llab quvvatlash
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </h3>
+            </span>
+          </div>
+        </div>
+      </section>
+      <!-- EDUCATION -->
+      <section class="education container">
+        <div class="education__box">
+          <aside class="education__first">
+            <span
+              ><img src="./images/darkblue icon img.svg" alt="darkblue" />
+              <p class="education__first__title">Ta'lim</p></span
+            >
+            <h1 class="education__title">
+              TA'LIMGA BERILGAN IMKONIYATDAN FOYDALANISH
+            </h1>
+          </aside>
+          <div class="education__cards">
+            <div class="education__cards__card">
+              <h1 class="education__card__title">
+                IT ta’lim va online kontent ko’paytirish
+              </h1>
+              <img src="./images/education img 1.svg" alt="images" />
+              <p class="education__card__desc">
+                Davlat va nodavlat ta’lim muassasalari bilan hamkorlik qilish
+              </p>
+              <button class="education__card__btn">
+                <a href="#">Batafsil</a
+                ><i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div class="education__cards__card">
+              <h1 class="education__card__title">A'ZOLIK</h1>
+              <img
+                src="./images/education img 2.svg"
+                alt="images"
+                style="margin-top: 60px"
+              />
+              <p class="education__card__desc">
+                Davlat va nodavlat ta’lim muassasalari bilan hamkorlik qilish
+              </p>
+              <button class="education__card__btn">
+                <a href="#">Batafsil</a
+                ><i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div class="education__cards__card">
+              <h1 class="education__card__title">
+                TARG'IBOT VA RAG'BATLANTIRISH
+              </h1>
+              <img src="./images/education img 3.svg" alt="images" />
+              <p class="education__card__desc">
+                Davlat va nodavlat ta’lim muassasalari bilan hamkorlik qilish
+              </p>
+              <button class="education__card__btn">
+                <a href="#">Batafsil</a
+                ><i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CHANSE -->
+      <section class="chance container">
+        <div class="chance__box">
+          <aside class="chance__first">
+            <span
+              ><img src="./images/darkblue icon img.svg" alt="darkblue" />
+              <p class="chance__first__title">Ta'lim</p></span
+            >
+            <h1 class="chance__title">
+              TA'LIMGA BERILGAN IMKONIYATDAN FOYDALANISH
+            </h1>
+          </aside>
+          <div class="chance__cards">
+            <div class="chance__cards__card">
+              <span>
+                <img src="./images/chance img 1.svg" alt="chance" />
+              </span>
+              <p class="chance__card__desc">
+                O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+              </p>
+            </div>
+            <div class="chance__cards__card">
+              <span style="border-radius: 20px 8px 20px 8px">
+                <img src="./images/chance img 2.svg" alt="chance" />
+              </span>
+              <p class="chance__card__desc">
+                O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+              </p>
+            </div>
+            <div class="chance__cards__card">
+              <span style="border-radius: 13px">
+                <img src="./images/chance img 3.svg" alt="chance" />
+              </span>
+              <p class="chance__card__desc">
+                O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+              </p>
+            </div>
+            <div class="chance__cards__card">
+              <span style="border-radius: 50%">
+                <img src="./images/chance img 4.svg" alt="chance" />
+              </span>
+              <p class="chance__card__desc">
+                O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- IT -->
+      <section class="it container">
+        <div class="it__box">
+          <aside class="it__first">
+            <span
+              ><img src="./images/darkblue icon img.svg" alt="darkblue" />
+              <p class="it__first__title">Imkoniyatlar</p></span
+            >
+            <h1 class="it__title">
+              TA'LIMGA BERILGAN IMKONIYATDAN FOYDALANISH
+            </h1>
+          </aside>
+          <div class="it__cards">
+            <div class="it__cards__card">
+              <img src="./images/it img 1.svg" alt="images" />
+              <span>
+                IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                muassasalarini qo'llab quvvatlash
+                <img src="./images/it img 1 icon.svg" alt="images" />
+              </span>
+            </div>
+            <div class="it__cards__card">
+              <img src="./images/it img 2.svg" alt="images" />
+              <span>
+                IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                muassasalarini qo'llab quvvatlash
+                <img src="./images/it img 1 icon.svg" alt="images" />
+              </span>
+            </div>
+            <div class="it__cards__card">
+              <img src="./images/it img 3.svg" alt="images" />
+              <span>
+                IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                muassasalarini qo'llab quvvatlash
+                <img src="./images/it img 1 icon.svg" alt="images" />
+              </span>
+            </div>
+            <div class="it__cards__card">
+              <img src="./images/it img 4.svg" alt="images" />
+              <span>
+                IT sohasida faoliyat yuritayotgan davlat va nodavlat ta'lim
+                muassasalarini qo'llab quvvatlash
+                <img src="./images/it img 1 icon.svg" alt="images" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODERN -->
+      <section>
+        <div class="box container">
+          <h1>TA'LIM BERILGAN IMKONIYATLAR</h1>
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/modern img 1.svg" alt="Image 1" />
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">
+                Zamonaviy Teledasturlar Orqali Yoshlarni AKT Sohasiga Kengroq
+                Jalb Qilish
+              </h2>
+              <p class="card__text">
+                O'zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+                va ularning it-ko'nikmalarini ko'nikmalarini rivojlantirish
+              </p>
+              <a href="#" class="card__button">Batafsil</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/modern img 2.svg" alt="Image 2" />
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">
+                Zamonaviy Teledasturlar Orqali Yoshlarni AKT Sohasiga Kengroq
+                Jalb Qilish
+              </h2>
+              <p class="card__text">
+                O'zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+                va ularning it-ko'nikmalarini ko'nikmalarini rivojlantirish
+              </p>
+              <a href="#" class="card__button">Batafsil</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/modern img 3.svg" alt="Image 3" />
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">
+                Zamonaviy Teledasturlar Orqali Yoshlarni AKT Sohasiga Kengroq
+                Jalb Qilish
+              </h2>
+              <p class="card__text">
+                O'zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish
+                va ularning it-ko'nikmalarini ko'nikmalarini rivojlantirish
+              </p>
+              <a href="#" class="card__button">Batafsil</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- INTERNATIONAL -->
+      <section class="international container">
+        <div class="international__box">
+          <aside class="international__first">
+            <span
+              ><img src="./images/darkblue icon img.svg" alt="darkblue" />
+              <p class="international__first__title">Xalqaro</p></span
+            >
+            <h1 class="international__title">
+              TA'LIMGA BERILGAN IMKONIYATDAN FOYDALANISH KERAK
+            </h1>
+          </aside>
+          <div class="international__cards">
+            <div class="international__card">
+              <img src="./images/xalqaro img 1.svg" alt="images" />
+            </div>
+            <div class="international__right">
+              <div class="international__card-2">
+                <span
+                  ><p>A’zo bo’lish</p>
+                  <img src="./images/azo img.svg" alt="img"
+                /></span>
+                <button type="submit" class="international__btn">
+                  A’zolik +
+                </button>
+              </div>
+              <div class="international__card-2">
+                <span
+                  ><p>Profile yaratish</p>
+                  <img src="./images/azo img.svg" alt="img"
+                /></span>
+                <button type="submit" class="international__btn">
+                  Profile +
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PARTNES -->
+      <section class="partners container">
+        <div class="partners__box">
+          <aside class="partners__first">
+            <span
+              ><img src="./images/darkblue icon img.svg" alt="darkblue" />
+              <p class="partners__first__title">Partnyorlar</p></span
+            >
+            <h1 class="partners__title">Xamkorlar</h1>
+            <p class="partners__desc">
+              O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish va
+              ularning it-ko‘nikmalarini ko'nikmalarini rivojlantirish
+            </p>
+          </aside>
+          <div class="partners__bottom">
+            <div class="partners__bottom__card">
+              <img src="./images/partners img 1.svg" alt="images" />
+            </div>
+            <div class="partners__bottom__card">
+              <img
+                src="./images/partners img 2.svg"
+                alt="images"
+                style="width: 120px"
+                class="partners__img"
+              />
+            </div>
+            <div class="partners__bottom__card">
+              <img src="./images/partners img 1.svg" alt="images" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BLOG -->
+      <section class="blog container">
+        <div class="blog__box">
+          <aside class="blog__first">
+            <span
+              ><img src="./images/darkblue icon img.svg" alt="darkblue" />
+              <p class="blog__first__title">Partnyorlar</p></span
+            >
+            <h1 class="blog__title">Yangiliklar va blog</h1>
+            <p class="blog__desc">
+              O‘zbekistonda qizlarni akt sohasiga yana-da kengroq jalb etish va
+              ularning it-ko‘nikmalarini ko'nikmalarini rivojlantirish
+            </p>
+          </aside>
+          <div class="blog__cards">
+            <div class="blog__card">
+              <img src="./images/blog img 1.svg" alt="images" />
+              <span
+                >O‘zbekistonda qizlarni aktlari sohasiga yana-da kengroq
+                <img src="./images/it img 1 icon.svg" alt="images"
+              /></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
