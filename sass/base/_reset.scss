@@ -20,6 +20,9 @@ button {
 
 a {
   color: inherit;
+  &:hover {
+    color: #184afb;
+  }
 }
 
 @media (min-width: 768px) {

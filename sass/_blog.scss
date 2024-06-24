@@ -202,3 +202,78 @@
     }
   }
 }
+
+@media (min-width: 1500px) {
+  .blog {
+    width: 100%;
+    .blog__box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .blog__first {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      gap: 400px;
+      span {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    .blog__title {
+      width: 15%;
+      text-align: start;
+      font-size: 48px;
+    }
+    .blog__desc {
+      margin-top: 20px;
+      width: 20%;
+      text-align: start;
+    }
+    .blog__cards {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .blog__card {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+      span {
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+        justify-content: end;
+        img {
+          width: 20px;
+        }
+      }
+    }
+    .blog__card-4 {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+      span {
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+        justify-content: end;
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+}

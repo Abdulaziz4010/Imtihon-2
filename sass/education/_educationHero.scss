@@ -1,0 +1,149 @@
+.education-1 {
+  width: 100%;
+  margin-top: 50px;
+  .education-1__box {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .education-1__box__right {
+    img {
+      width: 100%;
+    }
+  }
+  .education-1__box__left {
+    width: 100%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .education-1__box__title {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .education-1__box__left__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .education-1__box__left__info__icon {
+    display: flex;
+    gap: 15px;
+    span {
+      width: 15px;
+      height: 15px;
+      background: #184afb;
+      border-radius: 50%;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .education-1__btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #184afb;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    &:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .education-1 {
+    width: 100%;
+    .education-1__box {
+      width: 100%;
+      display: flex;
+      align-items: start;
+      flex-direction: row;
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 20px;
+    }
+    .education-1__box__right {
+      order: 2;
+      img {
+        width: 100%;
+      }
+    }
+    .education-1__box__title {
+      text-align: start;
+    }
+    .education-1__btn {
+      width: 30%;
+      margin-top: 50px;
+      padding: 10px;
+      border: none;
+      background-color: #184afb;
+      border-radius: 20px;
+      color: white;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .education-1 {
+    width: 100%;
+    .education-1__box {
+      width: 100%;
+      display: flex;
+      align-items: start;
+      flex-direction: row;
+      background-color: #f5f5f5;
+      padding: 50px;
+      border-radius: 20px;
+    }
+    .education-1__box__right {
+      order: 2;
+      img {
+        width: 100%;
+      }
+    }
+    .education-1__box__title {
+      text-align: start;
+      font-size: 48px;
+    }
+    .education-1__btn {
+      width: 30%;
+      margin-top: 50px;
+      padding: 10px;
+      border: none;
+      background-color: #184afb;
+      border-radius: 20px;
+      color: white;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+    .education-1__box__left__info__icon {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      span {
+        width: 20px;
+        height: 20px;
+        background: #184afb;
+        border-radius: 50%;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+}
